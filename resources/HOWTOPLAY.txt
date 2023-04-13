@@ -1,0 +1,60 @@
+PERSONAL INFO: Up in the top right corner as a cash tab, 
+               click on it to view information such as 
+               - Cash
+               - Income 
+               - Expenses
+               - Stores owned  
+               - Loan: Get some extra money that'll need 
+                       to be payed back
+
+LOG: All moves by players are by default logged.
+     They allow you to view the event that occurred
+     and the moves other players made. This can 
+     be quite instrumental in helping with planning 
+     your next move.  
+
+EVENTS: Events that will occur at random, can provide small 
+        to significant boosts in income, productivity, 
+        wealth and other income boosting/slashing 
+        factors. Some events may also negatively impact 
+        you as well, so watch for them and plan accordingly
+
+NEXT TURN: Represented by a clock icon, clicking this will: 
+           - Change the economic environment 
+              -- Change demand of cities 
+              -- Change population of cities 
+           - Produce random events
+           - Progress the time by a year's quarter 
+           - Gain or lose profits depending on previous choices 
+
+BACK TO MAP: Represented by a map icon, clicking this will
+             close all windows and zoom out 
+           - Close all windows and reset the screen to default 
+
+CITY NODES: Clicking on one yellow cylinder on the map will 
+            generate a menu pertaining to details surrounding 
+            that city including population, Wealth level and 
+            generate an additional dropdown menu for more 
+            options 
+            - Manage City: Provide player avenues to operate within 
+                           a city 
+            - Manage Stores: Buy, sell, and produce store products 
+                             using sliders to determine how much 
+                             produce
+            - Produce Graph: Creates a graph that visualizes 
+                             sales trends 
+            - Exit: Exits the city menu 
+
+OPPONENTS: The game will have other players that will also buy 
+           stores. Them acquiring a store will make it more 
+           difficult to purchase and more risk to profit, 
+           they operate based upon the world and can buy stores
+           off of you. Make sure to plan for this 
+
+LOANS: You and other AI players have the ability to take loans. 
+       You can access this by clicking on the cash tab and 
+       accessing player info which will contain loan UI. 
+       While they may be useful in some situations, they can 
+       easily lead to bankruptcy if left untended to. Make sure  
+       that loans are dealt with as soon as possible and you 
+       are able to pay them back. 

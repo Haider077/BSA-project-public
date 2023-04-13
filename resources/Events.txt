@@ -1,0 +1,17 @@
+"War", ID: 01 
+"Alliance", ID: 02
+"Recession", ID: 03 
+"Inflation", ID: 04
+"Depression", ID: 05
+"Cyberattack breach", ID: 06
+"Ransomware attack", ID: 07
+"Sponsorship opportunity", ID: 08
+"Strike", ID: 09
+"Layoffs", ID: 010
+"Realestate market crash", ID: 011
+"Stock market crash", ID: 012
+"Economic boom", ID: 013
+"Surging demand", ID: 014
+"Celebrity promotion", ID: 015 
+"Baby Boom", ID: 016
+"Investment", ID: 017
