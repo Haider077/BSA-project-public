@@ -94,29 +94,6 @@ class eventhandler():
                 #Description: Will effect productivity and wealth
                 pass
             case 3:
-                if(rand.randint(0,100) > 95):
-                    for i in w.global_cities :
-                        if(i.name == "Beijing"):
-                            effectedCity = i
-                            self.feed_event("Xi Jin Ping Spa","8457","Xi jin ping is shutting down " + effectedCity.name + " and it will be removed to build a personal spa resort for himself (only Xi jin ping and his entourage remain in former bejing).")
-                            effectedCity.name = "Xi Jin Ping Spa"
-                            effectedCity.wealth = 0
-                            effectedCity.population -= round(effectedCity.population/2)
-                            effectedCity.description = "A happy spa for the glorius chairman of CCP."
-                            self.wi.log.log("Nothing different happened this qaurter, Beijing was always a spa for Xi Jin Ping. Any claim it was a real city is propaganda.")
-                
-                pass
-            case 4:
-                if(rand.randint(0,100) > 95): 
-                    effectedCity = w.global_cities[rand.randint(0,len(w.global_cities)- 1)]
-                    #Inflation methods tbd
-                    self.feed_event("Hobo invasion","5436","hobos have plagued " + effectedCity.name + " and it will lose " + str(round(effectedCity.wealth / 2)) + " units of wealth but gain " + f'{round(effectedCity.population / 5): ,}' + " population.")
-                    effectedCity.wealth = round(effectedCity.wealth / 2)
-                    effectedCity.population += round(effectedCity.population / 5)
-                    self.wi.log.log("A hobo invasion happend to " + effectedCity.name + ".")
-                    #Description: Will effect productivity, wealth and income 
-                pass
-            case 5:
                 if(rand.randint(0,100) > 90):
                     self.feed_event("Global Market Crash","G125", " The global market has crashed, hide your cash (wealth in all cities greatly reduced).") 
                     for i in w.global_cities :
@@ -125,16 +102,8 @@ class eventhandler():
                     #Depression case methods tbd
                     #Description: Will effect productivity, wealth, income and pop 
                 pass
-            case 6:
-                if(rand.randint(0,100) > 10): 
-                    self.feed_event("Robbed","0985", " A pack of idiots break into your office, beat you up, and take the money from your safe.") 
-                    self.wi.log.log("You got beat up and lost $" + f'{round(self.wi.player.getCash()* 0.05): ,}' + " cash.")
-                    self.wi.player.removeCash(round(self.wi.player.getCash()* 0.05))
-                    #cyberattack method tbd
-                    #Description: Will effect ability for stores to trade
-                pass
-            case 7:
-                investors = ["Jimmy Neutron","Jim Carrey","Xi Jin Ping","Kiryu Kazuma","The bald guy from shark tank","Adof Hilter","Elon Musk","Jack Ma","Some guy named Smith","Bill Gates","The Pope"]
+            case 4:
+                investors = ["Jimmy Neutron","Jim Carrey","Kiryu Kazuma","Jimothy Davis","Jack Ma","Smith Davis","Bill Gates","Dr.Abobo"]
 
                 if(rand.randint(0,100) > 10): 
                     self.feed_event("Investment","9985", investors[rand.randint(0,10)] + " has decided to buy shares and invest in your corporation. You will receive " + str(round(self.wi.player.getCash()* 0.05)) + " cash from the investor.") 
@@ -144,7 +113,7 @@ class eventhandler():
                 #ransomware methods tbd
                 #Description: Will effect cash and store selling status directly to unlock the stores
                 pass
-            case 8:
+            case 5:
                 if(rand.randint(0,100) > 10 and len(self.wi.player.getMarkets()) > 0):
                     product = self.wi.player.getMarkets()[rand.randint(0,len(self.wi.player.getMarkets())- 1)].products[rand.randint(0,3)]
                     if(rand.randint(0,100) > 20): 
